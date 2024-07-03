@@ -1,0 +1,10 @@
+version: '2'
+services:
+  zy-admin:
+    image: zy-admin:latest
+    ports:
+      - "30001:30001"
+    restart: always
+    #network_mode: host
+    volumes:
+      - ./logs:/logs

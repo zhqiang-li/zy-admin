@@ -1,0 +1,10 @@
+server:
+  port: 30001
+  servlet:
+    context-path: /zy-admin/api
+spring:
+  main:
+    banner-mode: "off"
+    allow-bean-definition-overriding: true
+  application:
+    name: zy-admin

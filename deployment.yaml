@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: zy-admin
+  template:
+    metadata:
+      labels:
+        app: zy-admin
+    spec:
+      containers:
+      - name: zy-admin
+        image: 222.213.116.100:1443/chtest04/zy-cloud/zy-admin:latest
+        ports:
+        - containerPort: 30001
